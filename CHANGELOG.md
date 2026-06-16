@@ -8,6 +8,7 @@ This changelog tracks project-facing changes, not local workstation setup steps.
 
 ### Added
 
+- Added pure UV barycentric math helpers and tests for the UV delta transfer prototype.
 - Added a `src` package layout for importable `icarus_dcc` launcher code.
 - Added the initial launcher configuration model with typed config and settings records.
 - Added pytest coverage for launcher config path derivation and settings loading.
