@@ -26,13 +26,13 @@ exclude_patterns = [
     '_build'
 ]
 
-html_theme = 'alabaster'
+html_theme = 'furo'
 html_title = 'Icarus DCC'
 html_baseurl = 'https://buffipulsa.github.io/icarus-dcc/'
 html_theme_options = {
-    'github_user': 'buffipulsa',
-    'github_repo': 'icarus-dcc',
-    'github_button': True,
+    'source_repository': 'https://github.com/buffipulsa/icarus-dcc/',
+    'source_branch': 'main',
+    'source_directory': 'docs/',
 }
 autodoc_member_order = 'bysource'
 autodoc_typehints = 'description'
