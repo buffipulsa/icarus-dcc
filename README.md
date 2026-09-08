@@ -88,6 +88,7 @@ rez env maya-2024 -- maya
 
 ## Documentation
 
+- [Online documentation](https://buffipulsa.github.io/icarus-dcc/)
 - [Development setup](docs/development.md)
 - [Rez setup](docs/rez.md)
 - [Changelog](CHANGELOG.md)
