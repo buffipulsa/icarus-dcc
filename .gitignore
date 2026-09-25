@@ -248,3 +248,5 @@ out/
 rez/config/rezconfig.py
 rez/config/local*.py
 
+# Local scratch files
+scratch/

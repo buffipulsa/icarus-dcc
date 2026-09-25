@@ -1,6 +1,13 @@
 {
     "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/src"
+    ],
     "python.analysis.diagnosticSeverityOverrides": {
         "reportMissingModuleSource": "none"
+    },
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.pytest_cache": true
     }
 }

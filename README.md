@@ -20,6 +20,7 @@ Icarus DCC is an early-stage DCC tooling project focused first on Autodesk Maya.
 | PySide2 | Maya 2024 UI development IntelliSense |
 | Maya 2024 | Initial DCC target and compatibility baseline |
 | CMake | Planned C++ plug-in build system |
+| Sphinx | Planned API documentation generation from NumPy-style docstrings |
 
 ## Repository Layout
 
@@ -28,8 +29,8 @@ icarus-dcc/
   docs/                 Project setup and development notes
   plugins/              Future Maya plug-in code
   rez/                  Commit-friendly Rez package definitions
-  tests/                Future tests
-  tools/launcher/       External PySide launcher scaffold
+  src/icarus_dcc/       Importable Python package code
+  tests/                Python test suite
   CHANGELOG.md          Project-facing change history
   pyproject.toml        UV-managed Python project metadata
   uv.lock               Locked Python development dependencies
