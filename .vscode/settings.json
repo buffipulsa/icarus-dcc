@@ -14,6 +14,15 @@
         "reportUnknownArgumentType": "none",
         "reportUnknownLambdaType": "none"
     },
+    "cSpell.overrides": [
+        {
+            "filename": "**/*.py",
+            "includeRegExpList": [
+                "/\"\"\"[\\s\\S]*?\"\"\"/g",
+                "/'''[\\s\\S]*?'''/g"
+            ]
+        }
+    ],
     "files.exclude": {
         "**/__pycache__": true,
         "**/.pytest_cache": true
