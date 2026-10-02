@@ -2,10 +2,12 @@
 Icarus DCC
 ==========
 
-Tools for working with Maya using Python API 2.0.
+An open-source DCC-facing pipeline host with a dependency-free plugin boundary.
 
 Icarus DCC provides node handles, launcher configuration, and development
 utilities for Maya. The UV delta transfer plugin is under development.
+
+Optional tooling integrations are maintained outside this repository.
 
 .. toctree::
     :maxdepth: 2

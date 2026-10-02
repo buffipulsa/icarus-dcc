@@ -1,6 +1,6 @@
 # Icarus DCC
 
-Icarus DCC is an early-stage DCC tooling project focused first on Autodesk Maya. The project is being built as a learning-oriented pipeline prototype with a clean separation between editor tooling, runtime environment setup, Maya API utilities, and future native plug-in builds.
+Icarus DCC is an early-stage, open-source DCC-facing pipeline host focused first on Autodesk Maya. It provides stable host contracts and DCC utilities while allowing tooling to remain in independently packaged plugins.
 
 ## Goals
 
@@ -10,6 +10,17 @@ Icarus DCC is an early-stage DCC tooling project focused first on Autodesk Maya.
 - Document public Python modules with Sphinx and publish them through GitHub Pages.
 - Use CMake later for compiled C++ Maya plug-ins.
 - Keep machine-local install paths out of the Git repository.
+- Keep optional pipeline tools outside the Icarus distribution; integrations belong in separate adapter packages.
+
+## Host and Plugin Boundary
+
+`icarus_dcc.host` contains the dependency-free public boundary for external
+plugins. A plugin supplies a `PluginDescriptor` and a `register(host)` method;
+the host manages lifecycle and plugin-owned capabilities.
+
+Icarus does not import or require `emmTools` or `open-rig-graph`. Those projects
+remain independent and may integrate through separately maintained optional
+adapter packages.
 
 ## Current Tooling
 
@@ -33,6 +44,7 @@ icarus-dcc/
   rez/                  Commit-friendly Rez package definitions
   src/icarus_dcc/       Importable Python package code
     dev/                Maya development reload helpers
+    host/               Dependency-free host/plugin contracts
     launcher/           Launcher configuration records
     maya/               Maya API 2.0 node handles and records
     uv/                 UV delta transfer package scaffold

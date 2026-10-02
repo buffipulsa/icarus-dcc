@@ -8,6 +8,7 @@ The API documentation is split by package area.
     :maxdepth: 2
 
     api/maya
+    api/host
     api/launcher
     api/development
     api/logging

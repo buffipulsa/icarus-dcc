@@ -8,6 +8,8 @@ This changelog tracks project-facing changes, not local workstation setup steps.
 
 ### Added
 
+- Added a dependency-free host/plugin boundary for independently packaged DCC
+  tooling, with capability registration and lifecycle handling.
 - Added GitHub Pages publishing for the Sphinx documentation.
 - Added Sphinx API documentation for the Maya handles, launcher config,
   development reload helpers, logging helpers, and connection records.
